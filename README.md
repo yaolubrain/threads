@@ -290,7 +290,7 @@ Note that if the main thread's upvalue were global, as opposed to `local` it wou
 In which case, `queuevalue` would be `nil`.
 
 In the same example, the queue also communicates a value to the main thread.
-This is accomplished by having the `callback` return one ore many values which will be serialized and unserialized as arguments to the `endcallback` function.
+This is accomplished by having the `callback` return one or many values which will be serialized and unserialized as arguments to the `endcallback` function.
 In this case a value of `1` is received by the main thread as argument `inc` to the `endcallback` function, which then uses it to increment `upvalue`.
 This demonstrates how communication between threads is easily achieved using the `addjob` method.
 
